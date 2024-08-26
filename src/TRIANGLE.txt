@@ -1,0 +1,123 @@
+Goto ZZ
+Lbl ZY
+prgmAMATHELP
+Lbl ZZ
+ClrHome
+Menu("WHAT ARE YOU LOOKING FOR?","AN ANGLE",2B,"A SIDE",2C,"[H]Home",ZY)
+Lbl 2B
+Menu("WHAT DO YOU KNOW?","SSS",2E,"SAS",2F,"SSA",2G,"<BACK",ZZ)
+Lbl 2C
+Menu("WHAT DO YOU KNOW?","AAS",2H,"ASA",2I,"SAS",2J,"SSA",2K,"<BACK",ZZ)
+Lbl 2E
+Disp "ENTER THE SIDE ACROSS FROM"
+Disp " THE ANGLE YOU ARE LOOKING"
+Input " FOR:",C
+Input "ENTER ANOTHER SIDE:",A
+Input "ENTER ANOTHER SIDE:",B
+cos^-1(((A^2)+(B^2)-(C^2))/(2AB))->W
+Disp "ANGLE=",W
+Return
+Lbl 2F
+Disp "ENTER THE SIDE ACROSS FROM"
+Disp " THE ANGLE YOU ARE LOOKING"
+Input " FOR:",E
+Disp "ENTER THE OTHER KNOWN"
+Input " SIDE:",D
+Disp "ENTER THE ANGLE BETWEEN"
+Input " THE TWO SIDES:",C
+sqrt(((E^2)+(D^2))-((2ED)cos(C)))->F
+sin^-1((Esin(C))/F)->W
+Disp "ANGLE=",W
+Return
+Lbl 2G
+Menu("ARE YOU LOOKING FOR THE","ANGLE BETWEEN THE SIDES",2L,"THE OTHER ANGLE",2M,"<BACK",ZZ)
+Lbl 2L
+Input "ENTER THE KNOWN ANGLE:",A
+Disp "ENTER THE SIDE OPPOSITE"
+Input " THAT ANGLE:",D
+Disp "ENTER THE OTHER KNOWN"
+Input " SIDE:",F
+sin^-1((Fsin(A))/D)->C
+If C=90
+Then
+	180-C-A->W
+	Disp "ANGLE=",W
+	Return
+Else
+	180-C-A->M
+	180-A-(180-C)->R
+	Disp "ANGLE=",M
+	Disp "                        OR"
+	Disp R
+	Return
+	Lbl 2M
+	Input "ENTER THE KNOWN ANGLE:",A
+	Disp "ENTER THE SIDE OPPOSITE"
+	Input " THAT ANGLE:",D
+	Disp "ENTER THE OTHER KNOWN"
+	Input " SIDE:",F
+	sin^-1((Fsin(A))/D)->C
+	If C=90
+	Then
+		Disp "ANGLE=",C
+		Return
+	Else
+		180-C->X
+		Disp "ANGLE=",C
+		Disp "                        OR"
+		Disp X
+		Return
+		Lbl 2H
+		Disp "ENTER AN ANGLE WITH A"
+		Disp " KNOWN SIDE ACROSS FROM IT"
+		Input " :",N
+		Disp "ENTER THE SIDE ACROSS"
+		Input " FROM THAT ANGLE:",S
+		Disp "ENTER THE ANGLE ACROSS"
+		Disp " FROM THE SIDE YOU ARE"
+		Input " LOOKING FOR:",Q
+		((S)sin(Q))/(sin(N))->A
+		Disp "SIDE=",A
+		Return
+		Lbl 2I
+		Input "ENTER THE KNOWN SIDE:",E
+		Disp "ENTER THE ANGLE ACROSS"
+		Disp " FROM THE SIDE YOU ARE"
+		Input " LOOKING FOR:",A
+		Disp "ENTER THE OTHER ANGLE NEXT"
+		Input " TO THE SIDE:",C
+		((E)sin(C))/(sin(180-(C+A)))->F
+		sqrt(((E^2)+(F^2))-((2EF))cos(A))->D
+		Disp "SIDE=",D
+		Return
+		Lbl 2J
+		Disp "ENTER THE ANGLE ACROSS"
+		Disp " FROM THE SIDE YOU ARE"
+		Input " LOOKING FOR:",B
+		Disp "ENTER A SIDE ADJACENT TO"
+		Input " THE ANGLE:",A
+		Disp "ENTER ANOTHER SIDE"
+		Input " ADJACENT TO THE ANGLE:",C
+		sqrt(((A^2)+(C^2))-((2AC)cos(B)))->W
+		Disp "SIDE=",W
+		Return
+		Lbl 2K
+		Input "ENTER THE KNOWN ANGLE:",A
+		Disp "ENTER THE SIDE OPPOSITE"
+		Input " THAT ANGLE:",D
+		Disp "ENTER THE OTHER KNOWN"
+		Input " SIDE:",F
+		sin^-1((Fsin(A))/D)->C
+		If C=90
+		Then
+			180-C-A->W
+			(Dsin(W))/sin(A)->T
+			Disp "SIDE=",T
+		Else
+			180-C-A->M
+			180-A-(180-C)->R
+			(Dsin(M))/sin(A)->U
+			(Dsin(R))/sin(A)->V
+			Disp "SIDE=",U
+			Disp "                        OR"
+			Disp V

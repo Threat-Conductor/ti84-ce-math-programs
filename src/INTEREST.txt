@@ -1,0 +1,48 @@
+Goto ZZ
+Lbl ZY
+prgmAMATHELP
+Lbl ZZ
+ClrHome
+Menu("What Kind Of Interest?","Simple",1,"Compound",2,"[H]Home",ZY)
+Lbl 1
+Menu("Solve For:","Total",1I,"Principle",1J,"Years",1K,"Rate",1L,"<BACK",ZZ)
+Lbl 1I
+Input "Principal: ",P
+Input "Rate: ",R
+Input "Periods: ",N
+R/100->R
+P*R*N->I
+I+P->F
+Disp "Interest: ",I
+Disp "Total: ",F
+Return
+Lbl 1J
+Input "Total: ",A
+Input "Rate: ",R
+Input "Years: ",T
+R/100->R
+Disp "Principle:",A/(1+TR)
+Return
+Lbl 1K
+Input "Total: ",A
+Input "Principle: ",P
+Input "Rate: ",R
+R/100->R
+Disp "Years:",((A/P)-1)/R
+Return
+Lbl 1L
+Input "Total: ",A
+Input "Principle: ",P
+Input "Years: ",T
+R/100->R
+Disp "Rate:",(((A/P)-1)/T)*100
+Return
+Lbl 2
+Input "Principal: ",P
+Input "Rate: ",R
+Input "Years: ",T
+Input "Times Per Year: ",N
+P(1+R/N)^(N*T)->F
+F-P->I
+Disp "Interest: ",I
+Disp "Total: ",F

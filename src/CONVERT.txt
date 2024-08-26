@@ -1,0 +1,555 @@
+Goto ZZ
+Lbl ZY
+prgmAMATHELP
+Lbl ZZ
+ClrHome
+Menu("What Unit Of Conversion?","Distance",3A,"Weight",4A,"Temperature",5A,"Area",2A,"Volume",6A,"Time",7A,"Data",8A,"Speed",9A,"Pressure",1A,"Energy",AA,"Power",BA,"[H]Home",ZY)
+Lbl BA
+Menu("Converting From What?","milliwatt",BB,"watt",BC,"kilowatt",BD,"megawatt",BE,"gigawatt",BF,"terawatt",BG,"horsepower",BH,"<BACK",ZZ)
+Lbl BB
+Input "Quantity: ",G
+Menu("Converting To?","milliwatt",BJ,"watt",BK,"kilowatt",BL,"megawatt",BM,"gigawatt",BN,"terawatt",BO,"horsepower",BP,"<BACK",ZZ)
+Lbl BC
+Input "Quantity: ",G
+G*1000->G
+Menu("Converting To?","milliwatt",BJ,"watt",BK,"kilowatt",BL,"megawatt",BM,"gigawatt",BN,"terawatt",BO,"horsepower",BP,"<BACK",ZZ)
+Lbl BD
+Input "Quantity: ",G
+G*1000000->G
+Menu("Converting To?","milliwatt",BJ,"watt",BK,"kilowatt",BL,"megawatt",BM,"gigawatt",BN,"terawatt",BO,"horsepower",BP,"<BACK",ZZ)
+Lbl BE
+Input "Quantity: ",G
+G*1000000000->G
+Menu("Converting To?","milliwatt",BJ,"watt",BK,"kilowatt",BL,"megawatt",BM,"gigawatt",BN,"terawatt",BO,"horsepower",BP,"<BACK",ZZ)
+Lbl BF
+Input "Quantity: ",G
+G*1000000000000->G
+Menu("Converting To?","milliwatt",BJ,"watt",BK,"kilowatt",BL,"megawatt",BM,"gigawatt",BN,"terawatt",BO,"horsepower",BP,"<BACK",ZZ)
+Lbl BG
+Input "Quantity: ",G
+G*1000000000000000->G
+Menu("Converting To?","milliwatt",BJ,"watt",BK,"kilowatt",BL,"megawatt",BM,"gigawatt",BN,"terawatt",BO,"horsepower",BP,"<BACK",ZZ)
+Lbl BH
+Input "Quantity: ",G
+G*735498.75->G
+Menu("Converting To?","milliwatt",BJ,"watt",BK,"kilowatt",BL,"megawatt",BM,"gigawatt",BN,"terawatt",BO,"horsepower",BP,"<BACK",ZZ)
+Lbl BJ
+Disp "milliwatt: ",round(G,6)
+Return
+Lbl BK
+Disp "watt: ",round(G/1000,6)
+Return
+Lbl BL
+Disp "kilowatt: ",round(G/1000000,6)
+Return
+Lbl BM
+Disp "megawatt: ",round(G/1000000000,6)
+Return
+Lbl BN
+Disp "gigawatt: ",round(G/1000000000000,6)
+Return
+Lbl BO
+Disp "terawatt: ",round(G/1000000000000000,6)
+Return
+Lbl BP
+Disp "horsepower: ",round(G/735498.75,6)
+Return
+Lbl AA
+Menu("Converting From What?","Joule",AP,"kilojoule",AB,"calorie",AC,"watt-hour",AD,"kilowatt-hour",AE,"gigajoule",AF,"megajoule",AG,"electron-volt",AH,"<BACK",ZZ)
+Lbl AP
+Input "Quantity: ",G
+Menu("Converting To?","Joule",AQ,"kilojoule",AI,"calorie",AJ,"watt-hour",AK,"kilowatt-hour",AL,"gigajoule",AM,"megajoule",AN,"electron-volt",AO,"<BACK",ZZ)
+Lbl AB
+Input "Quantity: ",G
+G*1000->G
+Menu("Converting To?","Joule",AQ,"kilojoule",AI,"calorie",AJ,"watt-hour",AK,"kilowatt-hour",AL,"gigajoule",AM,"megajoule",AN,"electron-volt",AO,"<BACK",ZZ)
+Lbl AC
+Input "Quantity: ",G
+G*4186.8->G
+Menu("Converting To?","Joule",AQ,"kilojoule",AI,"calorie",AJ,"watt-hour",AK,"kilowatt-hour",AL,"gigajoule",AM,"megajoule",AN,"electron-volt",AO,"<BACK",ZZ)
+Lbl AD
+Input "Quantity: ",G
+G*3600->G
+Menu("Converting To?","Joule",AQ,"kilojoule",AI,"calorie",AJ,"watt-hour",AK,"kilowatt-hour",AL,"gigajoule",AM,"megajoule",AN,"electron-volt",AO,"<BACK",ZZ)
+Lbl AE
+Input "Quantity: ",G
+G*3600000->G
+Menu("Converting To?","Joule",AQ,"kilojoule",AI,"calorie",AJ,"watt-hour",AK,"kilowatt-hour",AL,"gigajoule",AM,"megajoule",AN,"electron-volt",AO,"<BACK",ZZ)
+Lbl AF
+Input "Quantity: ",G
+G*1000000000->G
+Menu("Converting To?","Joule",AQ,"kilojoule",AI,"calorie",AJ,"watt-hour",AK,"kilowatt-hour",AL,"gigajoule",AM,"megajoule",AN,"electron-volt",AO,"<BACK",ZZ)
+Lbl AG
+Input "Quantity: ",G
+G*1000000->G
+Menu("Converting To?","Joule",AQ,"kilojoule",AI,"calorie",AJ,"watt-hour",AK,"kilowatt-hour",AL,"gigajoule",AM,"megajoule",AN,"electron-volt",AO,"<BACK",ZZ)
+Lbl AH
+Input "Quantity: ",G
+G*6241509074461000000->G
+Menu("Converting To?","Joule",AQ,"kilojoule",AI,"calorie",AJ,"watt-hour",AK,"kilowatt-hour",AL,"gigajoule",AM,"megajoule",AN,"electron-volt",AO,"<BACK",ZZ)
+Lbl AQ
+Disp "calorie: ",round(G,6)
+Return
+Lbl AI
+Disp "kilojoule: ",round(G/1000,6)
+Return
+Lbl AJ
+Disp "calorie: ",round(G/4186.8,6)
+Return
+Lbl AK
+Disp "watt-hour: ",round(G/3600,6)
+Return
+Lbl AL
+Disp "kilowatt-hour: ",round(G/3600000,6)
+Return
+Lbl AM
+Disp "gigajoule: ",round(G/1000000000,6)
+Return
+Lbl AN
+Disp "megajoule: ",round(G/1000000,6)
+Return
+Lbl AO
+Disp "electron-volt: ",round(G/6241509074461000000,6)
+Return
+Lbl 1A
+Menu("Converting From What?","Psi",1B,"Pascal",1C,"KiloPascal",1D,"Atmosphere",1E,"Bar",1F,"Ksi",1G,"<BACK",ZZ)
+Lbl 1B
+Input "Quantity: ",G
+Menu("Converting To?","Psi",1H,"Pascal",1I,"KiloPascal",1J,"Atmosphere",1K,"Bar",1L,"Ksi",1M,"<BACK",ZZ)
+Lbl 1C
+Input "Quantity: ",G
+G*6894.7572932->G
+Menu("Converting To?","Psi",1H,"Pascal",1I,"KiloPascal",1J,"Atmosphere",1K,"Bar",1L,"Ksi",1M,"<BACK",ZZ)
+Lbl 1D
+Input "Quantity: ",G
+G*6.8947572932->G
+Menu("Converting To?","Psi",1H,"Pascal",1I,"KiloPascal",1J,"Atmosphere",1K,"Bar",1L,"Ksi",1M,"<BACK",ZZ)
+Lbl 1E
+Input "Quantity: ",G
+G*0.0680459639->G
+Menu("Converting To?","Psi",1H,"Pascal",1I,"KiloPascal",1J,"Atmosphere",1K,"Bar",1L,"Ksi",1M,"<BACK",ZZ)
+
+Lbl 1F
+Input "Quantity: ",G
+G*0.0689475729->G
+Menu("Converting To?","Psi",1H,"Pascal",1I,"KiloPascal",1J,"Atmosphere",1K,"Bar",1L,"Ksi",1M,"<BACK",ZZ)
+Lbl 1G
+Input "Quantity: ",G
+G*0.001->G
+Menu("Converting To?","Psi",1H,"Pascal",1I,"KiloPascal",1J,"Atmosphere",1K,"Bar",1L,"Ksi",1M,"<BACK",ZZ)
+Lbl 1H 
+Disp "Psi: ",round(G,6)
+Return
+Lbl 1I
+Disp "Pascal: ",round(G/6894.7572932,6)
+Return
+Lbl 1J
+Disp "KiloPascal: ",round(G/6.8947572932,6)
+Return
+Lbl 1K
+Disp "Atmosphere: ",round(G/0.0680459639,6)
+Return
+Lbl 1L
+Disp "Bar: ",round(G/0.0689475729,6)
+Return
+Lbl 1M
+Disp "Ksi: ",round(G/0.001,6)
+Return
+Lbl 2A
+Menu("Converting From What?","mm^2",2B,"Cm^2",2C,"M^2",2D,"Km^2",2E,"In^2",2F,"Ft^2",2G,"Mi^2",2H,"<BACK",ZZ)
+Lbl 2B
+Input "Quantity: ",G
+Menu("Converting To?","mm^2",2I,"Cm^2",2J,"M^2",2K,"Km^2",2L,"In^2",2M,"Ft^2",2N,"Mi^2",2O,"<BACK",ZZ)
+Lbl 2C
+Input "Quantity: ",G
+G*100->G
+Menu("Converting To?","mm^2",2I,"Cm^2",2J,"M^2",2K,"Km^2",2L,"In^2",2M,"Ft^2",2N,"Mi^2",2O,"<BACK",ZZ)
+Lbl 2D
+Input "Quantity: ",G
+G*1000000->G
+Menu("Converting To?","mm^2",2I,"Cm^2",2J,"M^2",2K,"Km^2",2L,"In^2",2M,"Ft^2",2N,"Mi^2",2O,"<BACK",ZZ)
+Lbl 2E
+Input "Quantity: ",G
+G*1000000000000->G
+Menu("Converting To?","mm^2",2I,"Cm^2",2J,"M^2",2K,"Km^2",2L,"In^2",2M,"Ft^2",2N,"Mi^2",2O,"<BACK",ZZ)
+Lbl 2F
+Input "Quantity: ",G
+G*645.16->G
+Menu("Converting To?","mm^2",2I,"Cm^2",2J,"M^2",2K,"Km^2",2L,"In^2",2M,"Ft^2",2N,"Mi^2",2O,"<BACK",ZZ)
+Lbl 2G
+Input "Quantity: ",G
+G*92903.04->G
+Menu("Converting To?","mm^2",2I,"Cm^2",2J,"M^2",2K,"Km^2",2L,"In^2",2M,"Ft^2",2N,"Mi^2",2O,"<BACK",ZZ)
+Lbl 2H
+Input "Quantity: ",G
+G*2589988110336->G
+Menu("Converting To?","mm^2",2I,"Cm^2",2J,"M^2",2K,"Km^2",2L,"In^2",2M,"Ft^2",2N,"Mi^2",2O,"<BACK",ZZ)
+Lbl 2I
+Disp "mm^2: ",round(G,6)
+Return 
+Lbl 2J
+Disp "Cm^2: ",round(G/100,6)
+Return 
+Lbl 2K
+Disp "M^2: ",round(G/1000000,6)
+Return 
+Lbl 2L
+Disp "Km^2: ",round(G/1000000000000,6)
+Return 
+Lbl 2M
+Disp "In^2: ",round(G/645.16,6)
+Return 
+Lbl 2N
+Disp "Ft^2: ",round(G/92903.04,6)
+Return 
+Lbl 2O
+Disp "Mi^2: ",round(G/2589988110336,6)
+Return
+Lbl 3A
+Menu("Converting From What?","Millimeter",3B,"Centimeter",3C,"Meter",3D,"Kilometer",3E,"Inch",3F,"Foot",3G,"Mile",3H,"<BACK",ZZ)
+Lbl 3B
+Input "Quantity: ",G
+Menu("Converting To?","Millimeter",3I,"Centimeter",3J,"Meter",3K,"Kilometer",3L,"Inch",3M,"Foot",3N,"Mile",3O,"<BACK",ZZ)
+Lbl 3C
+Input "Quantity: ",G
+G*10->G
+Menu("Converting To?","Millimeter",3I,"Centimeter",3J,"Meter",3K,"Kilometer",3L,"Inch",3M,"Foot",3N,"Mile",3O,"<BACK",ZZ)
+Lbl 3D
+Input "Quantity: ",G
+G*1000->G
+Menu("Converting To?","Millimeter",3I,"Centimeter",3J,"Meter",3K,"Kilometer",3L,"Inch",3M,"Foot",3N,"Mile",3O,"<BACK",ZZ)
+Lbl 3E
+Input "Quantity: ",G
+G*1000000->G
+Menu("Converting To?","Millimeter",3I,"Centimeter",3J,"Meter",3K,"Kilometer",3L,"Inch",3M,"Foot",3N,"Mile",3O,"<BACK",ZZ)
+Lbl 3F
+Input "Quantity: ",G
+G*25.4->G
+Menu("Converting To?","Millimeter",3I,"Centimeter",3J,"Meter",3K,"Kilometer",3L,"Inch",3M,"Foot",3N,"Mile",3O,"<BACK",ZZ)
+Lbl 3G
+Input "Quantity: ",G
+G*304.8->G
+Menu("Converting To?","Millimeter",3I,"Centimeter",3J,"Meter",3K,"Kilometer",3L,"Inch",3M,"Foot",3N,"Mile",3O,"<BACK",ZZ)
+Lbl 3H
+Input "Quantity: ",G
+G*1609344->G
+Menu("Converting To?","Millimeter",3I,"Centimeter",3J,"Meter",3K,"Kilometer",3L,"Inch",3M,"Foot",3N,"Mile",3O,"<BACK",ZZ)
+Lbl 3I
+Disp "Milimeter: ",round(G,6)
+Return 
+Lbl 3J
+Disp "Centimeter: ",round(G/10,6)
+Return
+Lbl 3K
+Disp "Meter: ",round(G/1000,6)
+Return
+Lbl 3L
+Disp "Kilometer: ",round(G/1000000,6)
+Return
+Lbl 3M
+Disp "Inch: ",round(G/25.4,6)
+Return
+Lbl 3N
+Disp "Foot: ",round(G/304.8,6)
+Return
+Lbl 3O
+Disp "Mile: ",Round(G/1609344,6)
+Return
+Lbl 4A
+ClrHome
+Menu("Converting From What?","Miligram",4B,"Gram",4C,"Kilogram",4D,"Metric-Ton",4E,"Ounce",4F,"Pound",4G,"<BACK",ZZ)
+Lbl 4B
+Input "Quantity: ",G
+Menu("Converting To?","Miligram",4H,"Gram",4I,"Kilogram",4J,"Metric-Ton",4K,"Ounce",4L,"Pound",4M,"<BACK",ZZ)
+Lbl 4C
+Input "Quantity: ",G
+G*1000->G
+Menu("Converting To?","Miligram",4H,"Gram",4I,"Kilogram",4J,"Metric-Ton",4K,"Ounce",4L,"Pound",4M,"<BACK",ZZ)
+Lbl 4D
+Input "Quantity: ",G
+G*1000000->G
+Menu("Converting To?","Miligram",4H,"Gram",4I,"Kilogram",4J,"Metric-Ton",4K,"Ounce",4L,"Pound",4M,"<BACK",ZZ)
+Lbl 4E
+Input "Quantity: ",G
+G*1000000000->G
+Menu("Converting To?","Miligram",4H,"Gram",4I,"Kilogram",4J,"Metric-Ton",4K,"Ounce",4L,"Pound",4M,"<BACK",ZZ)
+Lbl 4F
+Input "Quantity: ",G
+G*28349.523125->G
+Menu("Converting To?","Miligram",4H,"Gram",4I,"Kilogram",4J,"Metric-Ton",4K,"Ounce",4L,"Pound",4M,"<BACK",ZZ)
+Lbl 4G
+Input "Quantity: ",G
+G*453592.37->G
+Menu("Converting To?","Miligram",4H,"Gram",4I,"Kilogram",4J,"Metric-Ton",4K,"Ounce",4L,"Pound",4M,"<BACK",ZZ)
+Lbl 4H
+Disp "Miligram: ",round(G,6)
+Return
+Lbl 4I
+Disp "Gram: ",round(G/1000,6)
+Return
+Lbl 4J
+Disp "Kilogram: ",round(G/1000000,6)
+Return
+Lbl 4K
+Disp "Metric-Ton: ",round(G/1000000000,6)
+Return
+Lbl 4L
+Disp "Ounce: ",round(G/28349.523125,6)
+Return
+Lbl 4M
+Disp "Pound: ",round(G/453592.37,6)
+Return
+Lbl 5A
+ClrHome
+Menu("Converting From What?","Kelvin",5B,"Farenheit",5C,"Celsius",5D,"Rankine",5E,"<BACK",ZZ)
+Lbl 5B
+Input "Quantity: ",G
+Menu("Converting To?","Kelvin",5F,"Farenheit",5G,"Celsius",5H,"Rankine",5I,"<BACK",ZZ)
+Lbl 5C
+Input "Quantity: ",G
+G*255.92777778->G
+Menu("Converting To?","Kelvin",5F,"Farenheit",5G,"Celsius",5H,"Rankine",5I,"<BACK",ZZ)
+Lbl 5D
+Input "Quantity: ",G
+G*274.15->G
+Menu("Converting To?","Kelvin",5F,"Farenheit",5G,"Celsius",5H,"Rankine",5I,"<BACK",ZZ)
+Lbl 5E
+Input "Quantity: ",G
+G*0.55555556->G
+Menu("Converting To?","Kelvin",5F,"Farenheit",5G,"Celsius",5H,"Rankine",5I,"<BACK",ZZ)
+Lbl 5F
+Disp "Kelvin: ",round(G,6)
+Return
+Lbl 5G
+Disp "Farenheit: ",round(G/255.92777778,6)
+Return
+Lbl 5H
+Disp "Celsius: ",round(G/274.15,6)
+Return
+Lbl 5I
+Disp "Rankine: ",round(G/0.55555556,6)
+Return
+Lbl 6A
+ClrHome
+Menu("Converting From What?","Milliliter",6B,"Liter",6C,"Teaspoon",6D,"Tablespoon",6E,"Cup",6F,"Gallon",6G,"mm^3",6N,"Cm^3",6O,"M^3",6P,"Km^3",6Q,"In^3",6R,"Mi^3",6S,"<BACK",ZZ)
+Lbl 6B
+Input "Quantity: ",G
+Menu("Converting To?","Milliliter",6H,"Liter",6I,"Teaspoon",6J,"Tablespoon",6K,"Cup",6L,"Gallon",6M,"mm^3",6T,"Cm^3",6U,"M^3",6V,"Km^3",6W,"In^3",6X,"Mi^3",6Y,"<BACK",ZZ)
+Lbl 6C
+Input "Quantity: ",G
+G*1000->G
+Menu("Converting To?","Milliliter",6H,"Liter",6I,"Teaspoon",6J,"Tablespoon",6K,"Cup",6L,"Gallon",6M,"mm^3",6T,"Cm^3",6U,"M^3",6V,"Km^3",6W,"In^3",6X,"Mi^3",6Y,"<BACK",ZZ)
+Lbl 6D
+Input "Quantity: ",G
+G*4.92892159->G
+Menu("Converting To?","Milliliter",6H,"Liter",6I,"Teaspoon",6J,"Tablespoon",6K,"Cup",6L,"Gallon",6M,"mm^3",6T,"Cm^3",6U,"M^3",6V,"Km^3",6W,"In^3",6X,"Mi^3",6Y,"<BACK",ZZ)
+Lbl 6E
+Input "Quantity: ",G
+G*14.78676478->G
+Menu("Converting To?","Milliliter",6H,"Liter",6I,"Teaspoon",6J,"Tablespoon",6K,"Cup",6L,"Gallon",6M,"mm^3",6T,"Cm^3",6U,"M^3",6V,"Km^3",6W,"In^3",6X,"Mi^3",6Y,"<BACK",ZZ)
+Lbl 6F
+Input "Quantity: ",G
+G*236.5882365->G
+Menu("Converting To?","Milliliter",6H,"Liter",6I,"Teaspoon",6J,"Tablespoon",6K,"Cup",6L,"Gallon",6M,"mm^3",6T,"Cm^3",6U,"M^3",6V,"Km^3",6W,"In^3",6X,"Mi^3",6Y,"<BACK",ZZ)
+Lbl 6G
+Input "Quantity: ",G
+G*3785.411784->G
+Menu("Converting To?","Milliliter",6H,"Liter",6I,"Teaspoon",6J,"Tablespoon",6K,"Cup",6L,"Gallon",6M,"mm^3",6T,"Cm^3",6U,"M^3",6V,"Km^3",6W,"In^3",6X,"Mi^3",6Y,"<BACK",ZZ)
+Lbl 6N
+Input "Quantity: ",G
+G*0.001->G
+Menu("Converting To?","Milliliter",6H,"Liter",6I,"Teaspoon",6J,"Tablespoon",6K,"Cup",6L,"Gallon",6M,"mm^3",6T,"Cm^3",6U,"M^3",6V,"Km^3",6W,"In^3",6X,"Mi^3",6Y,"<BACK",ZZ)
+Lbl 6O
+Input "Quantity: ",G
+Menu("Converting To?","Milliliter",6H,"Liter",6I,"Teaspoon",6J,"Tablespoon",6K,"Cup",6L,"Gallon",6M,"mm^3",6T,"Cm^3",6U,"M^3",6V,"Km^3",6W,"In^3",6X,"Mi^3",6Y,"<BACK",ZZ)
+Lbl 6P
+Input "Quantity: ",G
+G*1000000->G
+Menu("Converting To?","Milliliter",6H,"Liter",6I,"Teaspoon",6J,"Tablespoon",6K,"Cup",6L,"Gallon",6M,"mm^3",6T,"Cm^3",6U,"M^3",6V,"Km^3",6W,"In^3",6X,"Mi^3",6Y,"<BACK",ZZ)
+Lbl 6Q
+Input "Quantity: ",G
+G*1000000000000000->G
+Menu("Converting To?","Milliliter",6H,"Liter",6I,"Teaspoon",6J,"Tablespoon",6K,"Cup",6L,"Gallon",6M,"mm^3",6T,"Cm^3",6U,"M^3",6V,"Km^3",6W,"In^3",6X,"Mi^3",6Y,"<BACK",ZZ)
+Lbl 6R
+Input "Quantity: ",G
+G*16.387064->G
+Menu("Converting To?","Milliliter",6H,"Liter",6I,"Teaspoon",6J,"Tablespoon",6K,"Cup",6L,"Gallon",6M,"mm^3",6T,"Cm^3",6U,"M^3",6V,"Km^3",6W,"In^3",6X,"Mi^3",6Y,"<BACK",ZZ)
+Lbl 6S
+Input "Quantity: ",G
+G*4168181825440540->G
+Menu("Converting To?","Milliliter",6H,"Liter",6I,"Teaspoon",6J,"Tablespoon",6K,"Cup",6L,"Gallon",6M,"mm^3",6T,"Cm^3",6U,"M^3",6V,"Km^3",6W,"In^3",6X,"Mi^3",6Y,"<BACK",ZZ)
+Lbl 6H
+Disp "Milliliter: ",round(G,6)
+Return
+Lbl 6I
+Disp "Liter: ",round(G/1000,6)
+Return
+Lbl 6J
+Disp "Teaspoon: ",round(G/4.92892159,6)
+Return
+Lbl 6K
+Disp "Tablespoon: ",round(G/14.78676478,6)
+Return
+Lbl 6L
+Disp "Cup: ",round(G/236.5882365,6)
+Return
+Lbl 6M
+Disp "Gallon: ",round(G/3785.411784,6)
+Return
+Lbl 6T
+Disp "mm^3: ",round(G/0.001,6)
+Return
+Lbl 6U
+Disp "Cm^3: ",round(G,6)
+Return
+Lbl 6V
+Disp "M^3: ",round(G/1000000,6)
+Return
+Lbl 6W
+Disp "Km^3: ",round(G/1000000000000000,6)
+Return
+Lbl 6X
+Disp "In^3: ",round(G/16.387064,6)
+Return
+Lbl 6Y
+Disp "Mi^3: ",round(G/4168181825440540,6)
+Return
+Lbl 7A
+ClrHome
+Menu("Converting From What?","Millisecond",7B,"Second",7C,"Minute",7D,"Hour",7E,"Day",7F,"Week",7G,"Month",7H,"Year",7I,"<BACK",ZZ)
+Lbl 7B
+Input "Quantity: ",G
+Menu("Converting To?","Millisecond",7J,"Second",7K,"Minute",7L,"Hour",7M,"Day",7N,"Week",7O,"Month",7P,"Year",7Q,"<BACK",ZZ)
+Lbl 7C
+Input "Quantity: ",G
+G*1000->G
+Menu("Converting To?","Millisecond",7J,"Second",7K,"Minute",7L,"Hour",7M,"Day",7N,"Week",7O,"Month",7P,"Year",7Q,"<BACK",ZZ)
+Lbl 7D
+Input "Quantity: ",G
+G*60000->G
+Menu("Converting To?","Millisecond",7J,"Second",7K,"Minute",7L,"Hour",7M,"Day",7N,"Week",7O,"Month",7P,"Year",7Q,"<BACK",ZZ)
+Lbl 7E
+Input "Quantity: ",G
+G*3600000->G
+Menu("Converting To?","Millisecond",7J,"Second",7K,"Minute",7L,"Hour",7M,"Day",7N,"Week",7O,"Month",7P,"Year",7Q,"<BACK",ZZ)
+Lbl 7F
+Input "Quantity: ",G
+G*86400000->G
+Menu("Converting To?","Millisecond",7J,"Second",7K,"Minute",7L,"Hour",7M,"Day",7N,"Week",7O,"Month",7P,"Year",7Q,"<BACK",ZZ)
+Lbl 7G
+Input "Quantity: ",G
+G*604800000->G
+Menu("Converting To?","Millisecond",7J,"Second",7K,"Minute",7L,"Hour",7M,"Day",7N,"Week",7O,"Month",7P,"Year",7Q,"<BACK",ZZ)
+Lbl 7H
+Input "Quantity: ",G
+G*2629746000->G
+Menu("Converting To?","Millisecond",7J,"Second",7K,"Minute",7L,"Hour",7M,"Day",7N,"Week",7O,"Month",7P,"Year",7Q,"<BACK",ZZ)
+Lbl 7I
+Input "Quantity: ",G
+G*31556952000->G
+Menu("Converting To?","Millisecond",7J,"Second",7K,"Minute",7L,"Hour",7M,"Day",7N,"Week",7O,"Month",7P,"Year",7Q,"<BACK",ZZ)
+Lbl 7J
+Disp "Millisecond: ",round(G,6)
+Return
+Lbl 7K
+Disp "Second: ",round(G/1000,6)
+Return
+Lbl 7L
+Disp "Minute: ",round(G/60000,6)
+Return
+Lbl 7M
+Disp "Hour: ",round(G/3600000,6)
+Return
+Lbl 7N
+Disp "Day: ",round(G/86400000,6)
+Return
+Lbl 7O
+Disp "Week: ",round(G/604800000,6)
+Return
+Lbl 7P
+Disp "Month: ",round(G/2629746000,6)
+Return
+Lbl 7Q
+Disp "Year: ",round(G/31556952000,6)
+Return
+Lbl 8A
+ClrHome
+Menu("Converting From What?","Bit",8B,"Byte",8C,"Kilobyte",8D,"Megabyte",8E,"Gigabyte",8F,"Terabyte",8G,"Petabyte",8H,"<BACK",ZZ)
+Lbl 8B
+Input "Quantity: ",G
+Menu("Converting To?","Bit",8I,"Byte",8J,"Kilobyte",8K,"Megabyte",8L,"Gigabyte",8M,"Terabyte",8N,"Petabyte",8O,"<BACK",ZZ)
+Lbl 8C
+Input "Quantity: ",G
+G*8->G
+Menu("Converting To?","Bit",8I,"Byte",8J,"Kilobyte",8K,"Megabyte",8L,"Gigabyte",8M,"Terabyte",8N,"Petabyte",8O,"<BACK",ZZ)
+Lbl 8D
+Input "Quantity: ",G
+G*8000->G
+Menu("Converting To?","Bit",8I,"Byte",8J,"Kilobyte",8K,"Megabyte",8L,"Gigabyte",8M,"Terabyte",8N,"Petabyte",8O,"<BACK",ZZ)
+Lbl 8E
+Input "Quantity: ",G
+G*8000000->G
+Menu("Converting To?","Bit",8I,"Byte",8J,"Kilobyte",8K,"Megabyte",8L,"Gigabyte",8M,"Terabyte",8N,"Petabyte",8O,"<BACK",ZZ)
+Lbl 8F
+Input "Quantity: ",G
+G*8000000000->G
+Menu("Converting To?","Bit",8I,"Byte",8J,"Kilobyte",8K,"Megabyte",8L,"Gigabyte",8M,"Terabyte",8N,"Petabyte",8O,"<BACK",ZZ)
+Lbl 8G
+Input "Quantity: ",G
+G*8000000000000->G
+Menu("Converting To?","Bit",8I,"Byte",8J,"Kilobyte",8K,"Megabyte",8L,"Gigabyte",8M,"Terabyte",8N,"Petabyte",8O,"<BACK",ZZ)
+Lbl 8H
+Input "Quantity: ",G
+G*8000000000000000->G
+Menu("Converting To?","Bit",8I,"Byte",8J,"Kilobyte",8K,"Megabyte",8L,"Gigabyte",8M,"Terabyte",8N,"Petabyte",8O,"<BACK",ZZ)
+Lbl 8I
+Disp "Bit: ",round(G,6)
+Return
+Lbl 8J
+Disp "Byte: ",round(G/8,6)
+Return
+Lbl 8K
+Disp "Kilobyte: ",round(G/8000,6)
+Return
+Lbl 8L
+Disp "Megabyte: ",round(G/8000000,6)
+Return
+Lbl 8M
+Disp "Gigabyte: ",round(G/8000000000,6)
+Return
+Lbl 8N
+Disp "Terabyte: ",round(G/8000000000000,6)
+Return
+Lbl 8O
+Disp "Petabyte: ",round(G/8000000000000000,6)
+Return
+Lbl 9A
+ClrHome
+Menu("Converting From What?","Meter / Second",9B,"Kilometer / Hour",9C,"Foot / Second",9D,"Mile / Hour",9E,"<BACK",ZZ)
+Lbl 9B
+Input "Quantity: ",G
+Menu("Converting To?","Meter / Second",9F,"Kilometer / Hour",9G,"Foot / Second",9H,"Mile / Hour",9I,"<BACK",ZZ)
+Lbl 9C
+Input "Quantity: ",G
+G*0.277777778->G
+Menu("Converting To?","Meter / Second",9F,"Kilometer / Hour",9G,"Foot / Second",9H,"Mile / Hour",9I,"<BACK",ZZ)
+Lbl 9D
+Input "Quantity: ",G
+G*0.3048->G
+Menu("Converting To?","Meter / Second",9F,"Kilometer / Hour",9G,"Foot / Second",9H,"Mile / Hour",9I,"<BACK",ZZ)
+Lbl 9E
+Input "Quantity: ",G
+G*0.44704->G
+Menu("Converting To?","Meter / Second",9F,"Kilometer / Hour",9G,"Foot / Second",9H,"Mile / Hour",9I,"<BACK",ZZ)
+Lbl 9F
+Disp "Meter / Second: ",round(G,6)
+Return
+Lbl 9G
+Disp "Kilometer / Hour: ",round(G/0.277777778,6)
+Return
+Lbl 9H
+Disp "Foot / Second: ",round(G/0.3048,6)
+Return
+Lbl 9I
+Disp "Mile / Hour: ",round(G/0.44704,6)
+Return

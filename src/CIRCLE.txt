@@ -1,0 +1,40 @@
+Goto ZZ
+Lbl ZY
+prgmAMATHELP
+Lbl ZZ
+ClrHome
+Menu("What Dimension?","Second",AA,"Third",AD,"[H]Home",ZY)
+Lbl AA
+Menu("What Are You Looking For?","Circumfrence",AB,"Area",AC,"Diameter",AG,"Radius",AH,"<BACK",ZZ)
+Lbl AB
+Input "Radius: ",R
+2*pi*R->R
+Disp "Circumfrence: ",R
+Return
+Lbl AC
+Input "Radius: ",R
+pi*R^2->R
+Disp "Area: ",R
+Return
+Lbl AG
+Input "Radius: ",R
+R*2->R
+Disp "Diameter: ",R
+Return
+Lbl AG
+Input "Diameter: ",R
+R/2->R
+Disp "Radius: ",R
+Return
+Lbl AD
+Menu("What Are You Looking For?","Surface Area",AE,"Volume",AF,"<BACK",ZZ)
+Lbl AE
+Input "Radius: ",R
+4*pi*R^2->R
+Disp "Surface Area: ",R
+Lbl AF
+Return
+Input "Radius: ",R
+4n/d3*pi*R^3->R
+Disp "Volume: ",R
+Return

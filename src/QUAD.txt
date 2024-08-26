@@ -1,0 +1,18 @@
+a+bi
+Disp "AX^2*BX*C"
+Disp "~B +/- sqrt(B^2-(4*A*C)","2*A"
+Input "A: ",A
+Input "B: ",B
+Input "C: ",C
+B^2-(4*A*C)->D
+Disp "~B +/- sqrt(",D,"2*A"
+Pause 
+sqrt(D->E
+Disp ~B ,"+/-",E,"2*A"
+Pause 
+If D<0
+Then
+	Disp (~B+E)n/d(2*A)
+Else
+	Disp (~B+E)n/d(2*A),"                         n/d",(~B-E)n/d(2*A)
+	Real 
