@@ -3,7 +3,9 @@ Lbl ZY
 prgmAMATHELP
 Lbl ZZ
 ClrHome
-Menu("What Unit Of Conversion?","Distance",3A,"Weight",4A,"Temperature",5A,"Area",2A,"Volume",6A,"Time",7A,"Data",8A,"Speed",9A,"Pressure",1A,"Energy",AA,"Power",BA,"[H]Home",ZY)
+Menu("What Unit Of Conversion?","Pysical",ZX,"Temperature",5A,"Time",7A,"Data",8A,"Speed",9A,"Pressure",1A,"Energy",AA,"Power",BA,"[H]Home",ZY)
+Lbl ZX
+Menu("What unit Of Conversion?","Distance",3A,"Area",2A,"Volume",6A,"Weight",4A,"<BACK",ZZ)
 Lbl BA
 Menu("Converting From What?","milliwatt",BB,"watt",BC,"kilowatt",BD,"megawatt",BE,"gigawatt",BF,"terawatt",BG,"horsepower",BH,"<BACK",ZZ)
 Lbl BB
