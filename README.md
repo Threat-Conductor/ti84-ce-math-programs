@@ -9,4 +9,4 @@ CONVERT.8xp  = Unit converter that helps you find Distance, Weight, Temperature,
 INTEREST.8xp = Find the total, principal, rate or time of simple intrest, compound (WIP).\
 QUAD.8xp     = Quadratic formulas (WIP).\
 TRIANGLE.8xp = Find Sides or angles of a triangle.
-PHYSICS.8xp  = Find Force (newtons), Speed (m/s), Mass (kg)
+PHYSICS.8xp  = Find Force (newtons), Speed (m/s), and Mass (kg)
