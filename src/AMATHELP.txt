@@ -1,5 +1,5 @@
 ClrHome
-Menu("What Kind Of Math?","Conversion",1,"Triangle Math",2,"Circle Math",3,"Intrest",4,"Quadratic",5)
+Menu("What Kind Of Math?","Conversion",1,"Triangle Math",2,"Circle Math",3,"Intrest",4,"Quadratic",5,"Physics",6)
 Lbl 1
 prgmCONVERT
 Lbl 2
@@ -10,3 +10,5 @@ Lbl 4
 prgmINTEREST
 Lbl 5
 prgmQUAD
+Lbl 6
+prgmPHYSICS
