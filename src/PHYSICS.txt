@@ -1,0 +1,22 @@
+ClrHome
+Menu("Finding What?","Force",1A,"Mass",2A,"Acceleration",3A,"[H]Home",ZY)
+Lbl 1A
+Input "Mass (k/g): ",M
+Input "Acceleration (m/s): ",A
+M*A->F
+Disp F
+Return
+Lbl 2A
+Input "Force (n): ",F
+Input "Acceleration (m/s): ",A
+F/A->M
+Disp M
+Return
+Lbl 3A
+Input "Force (n): ",F
+Input "Mass (k/g): ",M
+F/M->A
+Disp A
+Return
+Lbl ZY
+prgmAMATHELP
